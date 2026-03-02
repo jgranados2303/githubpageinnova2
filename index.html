@@ -1,129 +1,303 @@
-<div class="header-section">
+!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Misión Innova-Mat | Premium</title>
+
+<style>
+
+/* ====== FONDO PREMIUM OSCURO ====== */
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #1f1f2e, #0a0a12);
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* ====== ANIMACIÓN FADE IN ====== */
+.fade-in{
+    animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* ====== HEADER ====== */
+.header{
+    text-align:center;
+    padding:60px 20px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color:white;
+    box-shadow:0 0 30px rgba(0,114,255,0.5);
+}
+
+.header h1{
+    font-size:42px;
+    margin:0;
+}
+
+.subtitulo{
+    font-size:18px;
+    opacity:0.9;
+}
+
+/* ====== TARJETAS GLASS ====== */
+.card{
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    border-radius:15px;
+    padding:25px;
+    margin:30px auto;
+    width:85%;
+    box-shadow:0 8px 30px rgba(0,0,0,0.6);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.8);
+}
+
+/* ====== GRID ====== */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    width:90%;
+    margin:40px auto;
+}
+
+/* ====== MISIONES ====== */
+.mision{
+    background: rgba(255,255,255,0.07);
+    padding:20px;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.mision:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #00c6ff;
+}
+
+/* ====== INSIGNIAS ====== */
+.insignia{
+    display:inline-block;
+    padding:6px 14px;
+    margin-top:10px;
+    border-radius:20px;
+    background:#00c6ff;
+    color:#000;
+    font-weight:bold;
+    font-size:13px;
+}
+
+/* ====== TABLA ESTILO DARK ====== */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#0072ff;
+}
+
+tr:nth-child(even){
+    background:rgba(255,255,255,0.05);
+}
+
+/* ====== POWER UPS ====== */
+.power{
+    background:linear-gradient(90deg,#7928ca,#ff0080);
+    padding:15px;
+    border-radius:12px;
+    margin:10px 0;
+    transition:0.3s;
+}
+
+.power:hover{
+    transform:scale(1.03);
+}
+
+/* ====== BARRA DE PROGRESO XP ====== */
+.progreso-container{
+    width:85%;
+    margin:40px auto;
+}
+
+.barra{
+    width:100%;
+    background:#222;
+    border-radius:30px;
+    overflow:hidden;
+    height:25px;
+}
+
+.barra-interna{
+    height:100%;
+    width:0%;
+    background:linear-gradient(90deg,#00f260,#0575e6);
+    transition: width 1s ease-in-out;
+}
+
+.progreso-texto{
+    text-align:center;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+/* ====== BOTÓN ====== */
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    background:#00c6ff;
+    color:#000;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#00f260;
+}
+
+/* ====== FOOTER ====== */
+.footer{
+    text-align:center;
+    padding:40px;
+    background:#111;
+    color:#aaa;
+    margin-top:60px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media(max-width:768px){
+    .header h1{font-size:28px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header fade-in">
     <h1>Misión Innova-Mat: El Futuro del Currículo</h1>
-    <div class="subtitle">Asignatura: Innovaciones Pedagógicas en la Enseñanza de las Matemáticas</div>
-    <p><strong>Nivel: Posgrado (Maestría)</strong></p>
+    <p class="subtitulo">Asignatura: Innovaciones Pedagógicas en la Enseñanza de las Matemáticas</p>
+    <p><strong>Nivel: PROGRAMA DE MAESTRÍA: EDUCACION CON MENCION EN ENSEÑANZA DE LA MATEMATICA </strong></p>
 </div>
 
-<div class="narrative-box">
-    <strong>Briefing de Misión:</strong> Colegas docentes, han sido reclutados para el Laboratorio de Innovación Matemática (LIM-EC). El sistema actual presenta brechas críticas; su objetivo es reprogramar la enseñanza mediante neurociencias, tecnología y andragogía. El éxito se mide en Puntos de Experiencia (XP).
+<div class="card fade-in">
+    <h2>Briefing de Misión</h2>
+    <p>Docentes reclutados para el Laboratorio LIM-EC deberán reprogramar la enseñanza mediante neurociencias, tecnología y andragogía. El éxito se mide en Puntos de Experiencia (XP).</p>
 </div>
 
-<h2>1. Rangos de Maestría (Sistema de XP)</h2>
-<table>
-    <thead>
+<div class="progreso-container fade-in">
+    <h2>Sistema de Progreso XP</h2>
+    <div class="barra">
+        <div class="barra-interna" id="barraXP"></div>
+    </div>
+    <div class="progreso-texto" id="textoXP">XP Actual: 0</div>
+    <div style="text-align:center; margin-top:15px;">
+        <button onclick="sumarXP(100)">+100 XP</button>
+        <button onclick="sumarXP(250)">+250 XP</button>
+    </div>
+</div>
+
+<div class="card fade-in">
+    <h2>Rangos de Maestría</h2>
+    <table>
         <tr>
-            <th>Rango de Logro</th>
-            <th>XP Requerida</th>
-            <th>Calificación Final</th>
+            <th>Rango</th>
+            <th>XP</th>
+            <th>Calificación</th>
         </tr>
-    </thead>
-    <tbody>
         <tr>
             <td>🥇 Maestro Innovador Senior</td>
-            <td>900 - 1000 XP</td>
+            <td>900 - 1000</td>
             <td>10 / 10</td>
         </tr>
         <tr>
             <td>🥈 Especialista en Innovación</td>
-            <td>800 - 899 XP</td>
+            <td>800 - 899</td>
             <td>9 / 10</td>
         </tr>
         <tr>
             <td>🥉 Investigador en Formación</td>
-            <td>700 - 799 XP</td>
+            <td>700 - 799</td>
             <td>8 / 10</td>
         </tr>
-    </tbody>
-</table>
-
-<h2>2. Hoja de Ruta (Misiones de Nivel)</h2>
-
-<div class="unit-grid">
-    <!-- UNIDAD 1 -->
-    <div class="mission-item">
-        <h3>Unidad 1: Currículo y Legislación Ecuatoriana</h3>
-        <p><strong>Encuentro 1:</strong> La Autopsia del Currículo (Fundamentos y Debate).</p>
-        <p><strong>Encuentro 2:</strong> Cacería de Innovación (Análisis crítico de artículos).</p>
-        <div class="badge-tag">RECOMPENSA: Insignia Analista Legislativo</div>
-    </div>
-
-    <!-- UNIDAD 2 -->
-    <div class="mission-item">
-        <h3>Unidad 2: Competencias y Evaluación</h3>
-        <p><strong>Encuentro 1:</strong> Desafío ABP (Aprendizaje Basado en Problemas) Geométrico.</p>
-        <p><strong>Encuentro 2:</strong> Clínica de Casos (Evaluación y Autonomía).</p>
-        <div class="badge-tag">RECOMPENSA: Insignia Arquitecto Pedagógico</div>
-    </div>
-
-    <!-- UNIDAD 3 -->
-    <div class="mission-item">
-        <h3>Unidad 3: Neurociencias en la Matemática</h3>
-        <p><strong>Encuentro 1:</strong> Duelo de Titanes (Ansari, Dehaene, Landerl).</p>
-        <p><strong>Encuentro 2:</strong> Neuro-Hackathon (Resolución de problemas reales).</p>
-        <div class="badge-tag">RECOMPENSA: Insignia Neuro-Hacker</div>
-    </div>
-
-    <!-- UNIDAD 4 -->
-    <div class="mission-item">
-        <h3>Unidad 4: Andragogía y Software PhET</h3>
-        <p><strong>Encuentro 1:</strong> Chrono-Math Challenge (Evolución del aprendizaje).</p>
-        <p><strong>Encuentro 2:</strong> Lanzamiento del Legacy Paper (Defensa de Innovación).</p>
-        <div class="badge-tag">RECOMPENSA: Insignia Líder de Innovación</div>
-    </div>
+    </table>
 </div>
 
-<h2>3. Cartas de Poder (Power-Ups)</h2>
-<div class="power-up-card">
-    <strong>🃏 El Teorema de la Prórroga (Coste: 50 XP):</strong> Otorga 48 horas adicionales para una entrega de misión.
-</div>
-<div class="power-up-card">
-    <strong>👁️ Consulta al Oráculo (Coste: 75 XP):</strong> Acceso a una sesión de mentoría privada 1-a-1 sobre el proyecto final.
-</div>
-<div class="power-up-card">
-    <strong>🛡️ Escudo DUA (Coste: 100 XP):</strong> Permite re-diseñar y entregar nuevamente una actividad práctica para alcanzar el máximo puntaje.
+<div class="grid fade-in">
+
+<div class="mision">
+<h3>Unidad 1: Currículo y Legislación</h3>
+<p>Autopsia del Currículo y Cacería de Innovación</p>
+<span class="insignia">Analista Legislativo</span>
 </div>
 
-<h2>4. Evaluación Final: El "Legacy Paper"</h2>
-<p>Desarrollo de un artículo científico que sintetiza la innovación propuesta. Puntuación máxima: <span class="xp-text">400 XP</span>.</p>
+<div class="mision">
+<h3>Unidad 2: Competencias y Evaluación</h3>
+<p>Desafío ABP y Clínica de Casos</p>
+<span class="insignia">Arquitecto Pedagógico</span>
+</div>
 
-<table>
-    <thead>
-        <tr>
-            <th>Criterio Académico</th>
-            <th>Indicador de Éxito</th>
-            <th>XP</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Diagnóstico</td>
-            <td>Análisis crítico del currículo nacional ecuatoriano.</td>
-            <td>80 XP</td>
-        </tr>
-        <tr>
-            <td>Bases Científicas</td>
-            <td>Integración de neurociencia (Dehaene/Ansari).</td>
-            <td>80 XP</td>
-        </tr>
-        <tr>
-            <td>Innovación Técnica</td>
-            <td>Uso avanzado de PhET bajo principios DUA.</td>
-            <td>100 XP</td>
-        </tr>
-        <tr>
-            <td>Andragogía</td>
-            <td>Adaptación de la enseñanza para el estudiante adulto.</td>
-            <td>60 XP</td>
-        </tr>
-        <tr>
-            <td>Rigor Editorial</td>
-            <td>Normas APA 7ma Edición y fuentes de alto impacto.</td>
-            <td>80 XP</td>
-        </tr>
-    </tbody>
-</table>
+<div class="mision">
+<h3>Unidad 3: Neurociencias</h3>
+<p>Duelo de Titanes y Neuro-Hackathon</p>
+<span class="insignia">Neuro-Hacker</span>
+</div>
+
+<div class="mision">
+<h3>Unidad 4: Andragogía y PhET</h3>
+<p>Chrono-Math y Defensa del Legacy Paper</p>
+<span class="insignia">Líder de Innovación</span>
+</div>
+
+</div>
+
+<div class="card fade-in">
+<h2>Cartas de Poder</h2>
+<div class="power">🃏 Teorema de la Prórroga (50 XP)</div>
+<div class="power">👁️ Consulta al Oráculo (75 XP)</div>
+<div class="power">🛡️ Escudo DUA (100 XP)</div>
+</div>
 
 <div class="footer">
-    <p>Maestría en Innovación Pedagógica - Módulo de Matemáticas-PhD. John Fernando Granados Romero </p>
-    <p>Ecuador, 2024 | Laboratorio de Innovación LIM-EC</p>
+<p> PROGRAMA DE MAESTRÍA: EDUCACION CON MENCION EN ENSEÑANZA DE LA MATEMATICA- Innovación Pedagógica </p>
+<p>PhD. John Fernando Granados Romero</p>
+<p>Ecuador, 2026 | Laboratorio de Innovación LIM-EC</p>
 </div>
+
+<script>
+
+let xp = 0;
+
+function sumarXP(valor){
+    xp += valor;
+    if(xp > 1000) xp = 1000;
+
+    let porcentaje = (xp/1000)*100;
+    document.getElementById("barraXP").style.width = porcentaje + "%";
+    document.getElementById("textoXP").innerText = "XP Actual: " + xp;
+
+    if(xp >= 900){
+        alert("¡Rango alcanzado: Maestro Innovador Senior!");
+    }
+}
+
+</script>
+
+</body>
+</html>
