@@ -1,315 +1,123 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Misión Innova-Mat</title>
+<div style="font-family: Arial, sans-serif; background: linear-gradient(135deg,#0f2027,#203a43,#2c5364); padding:40px; border-radius:15px; color:white;">
 
-<style>
+<h1 style="text-align:center; font-size:36px;">🚀 MISIÓN INNOVA-MAT</h1>
+<h3 style="text-align:center;">Laboratorio de Innovación Matemática – LIM-EC</h3>
+<p style="text-align:center; font-size:18px;">
+Maestría en Educación con Mención en la Enseñanza de las Matemáticas<br>
+PhD. John Fernando Granados Romero | Ecuador 2026
+</p>
 
-/* ====== ESTILOS GENERALES ====== */
-body{
-    margin:0;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: #ffffff;
-    line-height: 1.6;
-}
+<hr style="border:1px solid #00e5ff; margin:30px 0;">
 
-/* ====== HEADER ====== */
-.header-section{
-    text-align:center;
-    padding:60px 20px;
-    background: linear-gradient(90deg, #1c92d2, #f2fcfe);
-    color:#0f2027;
-}
+<h2>🎯 Briefing de Misión</h2>
+<p>
+El sistema educativo presenta fallas críticas en currículo, evaluación, integración tecnológica y neurociencias.
+Ustedes han sido reclutados para reprogramar la enseñanza de las matemáticas.
+Cada misión otorga <strong>100 XP (10 puntos)</strong>.
+</p>
 
-.header-section h1{
-    font-size:42px;
-    margin-bottom:10px;
-}
+<hr style="border:1px solid #00e5ff; margin:30px 0;">
 
-.subtitle{
-    font-size:20px;
-    font-weight:500;
-}
+<h2>🧠 MISIÓN 1: LA AUTOPSIA DEL CURRÍCULO</h2>
+<p><strong>Insignia:</strong> 🏅 Analista Legislativo</p>
+<p><strong>Objetivo:</strong> Diagnosticar críticamente el currículo nacional de Matemática.</p>
+<ul>
+<li>Análisis FODA curricular</li>
+<li>Identificación de brechas</li>
+<li>Propuesta de mejora</li>
+</ul>
+<p style="color:#00ffcc;"><strong>Recompensa:</strong> 100 XP</p>
 
-/* ====== NARRATIVE BOX ====== */
-.narrative-box{
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    padding:25px;
-    margin:30px auto;
-    width:85%;
-    border-radius:15px;
-    border-left:6px solid #00f2fe;
-    box-shadow:0 8px 20px rgba(0,0,0,0.3);
-}
+<hr>
 
-/* ====== TITULOS ====== */
-h2{
-    text-align:center;
-    margin-top:60px;
-    font-size:28px;
-    color:#00f2fe;
-}
+<h2>🏗 MISIÓN 2: ARQUITECTURA DE COMPETENCIAS</h2>
+<p><strong>Insignia:</strong> 🏅 Arquitecto Pedagógico</p>
+<p><strong>Objetivo:</strong> Diseñar una experiencia ABP con evaluación auténtica.</p>
+<ul>
+<li>Problema contextualizado</li>
+<li>Secuencia didáctica</li>
+<li>Rúbrica por competencias</li>
+</ul>
+<p style="color:#00ffcc;"><strong>Recompensa:</strong> 100 XP</p>
 
-/* ====== TABLAS ====== */
-table{
-    width:85%;
-    margin:20px auto;
-    border-collapse:collapse;
-    background:white;
-    color:#333;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
-}
+<hr>
 
-th{
-    background:#1c92d2;
-    color:white;
-    padding:12px;
-}
+<h2>🧬 MISIÓN 3: NEURO-HACKATHON</h2>
+<p><strong>Insignia:</strong> 🏅 Neuro-Hacker</p>
+<p><strong>Objetivo:</strong> Diseñar una microintervención basada en neurociencias.</p>
+<ul>
+<li>Activación parietal</li>
+<li>Regulación emocional</li>
+<li>Atención ejecutiva</li>
+</ul>
+<p style="color:#00ffcc;"><strong>Recompensa:</strong> 100 XP</p>
 
-td{
-    padding:12px;
-    text-align:center;
-}
+<hr>
 
-tr:nth-child(even){
-    background:#f2f2f2;
-}
+<h2>🖥 MISIÓN 4: CHRONO-MATH CHALLENGE</h2>
+<p><strong>Insignia:</strong> 🏅 Líder de Innovación</p>
+<p><strong>Objetivo:</strong> Diseñar experiencia andragógica usando simuladores PhET.</p>
+<ul>
+<li>Integración tecnológica</li>
+<li>Aplicación DUA</li>
+<li>Evaluación auténtica</li>
+</ul>
+<p style="color:#00ffcc;"><strong>Recompensa:</strong> 100 XP</p>
 
-tr:hover{
-    background:#dff6ff;
-    transition:0.3s;
-}
+<hr style="border:1px solid #00e5ff; margin:30px 0;">
 
-/* ====== GRID DE UNIDADES ====== */
-.unit-grid{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-    gap:25px;
-    width:90%;
-    margin:40px auto;
-}
+<h2>🏆 Sistema de Rangos</h2>
 
-/* ====== TARJETAS DE MISION ====== */
-.mission-item{
-    background: rgba(255,255,255,0.08);
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 6px 15px rgba(0,0,0,0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.mission-item:hover{
-    transform: translateY(-8px);
-    box-shadow:0 12px 25px rgba(0,0,0,0.6);
-}
-
-.mission-item h3{
-    color:#00f2fe;
-}
-
-/* ====== BADGE ====== */
-.badge-tag{
-    margin-top:15px;
-    padding:8px 12px;
-    background:#00f2fe;
-    color:#0f2027;
-    border-radius:20px;
-    font-weight:bold;
-    display:inline-block;
-    font-size:13px;
-}
-
-/* ====== POWER UPS ====== */
-.power-up-card{
-    width:85%;
-    margin:15px auto;
-    padding:20px;
-    background: linear-gradient(90deg, #11998e, #38ef7d);
-    border-radius:12px;
-    color:#0f2027;
-    font-weight:500;
-    box-shadow:0 6px 15px rgba(0,0,0,0.4);
-    transition:0.3s;
-}
-
-.power-up-card:hover{
-    transform:scale(1.02);
-}
-
-/* ====== XP DESTACADO ====== */
-.xp-text{
-    font-weight:bold;
-    font-size:20px;
-    color:#00f2fe;
-}
-
-/* ====== FOOTER ====== */
-.footer{
-    text-align:center;
-    padding:40px 20px;
-    margin-top:60px;
-    background:#111;
-    font-size:14px;
-    color:#bbb;
-}
-
-/* ====== RESPONSIVE ====== */
-@media(max-width:768px){
-    .header-section h1{
-        font-size:30px;
-    }
-    table{
-        width:95%;
-    }
-    .narrative-box{
-        width:95%;
-    }
-}
-
-</style>
-</head>
-
-<body>
-
-<div class="header-section">
-    <h1>Misión Innova-Mat: El Futuro del Currículo</h1>
-    <div class="subtitle">Asignatura: Innovaciones Pedagógicas en la Enseñanza de las Matemáticas</div>
-    <p><strong>Nivel: Posgrado (Maestría Educación con Mención en la Enseñanza de las Matemáticas)</strong></p>
-</div>
-
-<div class="narrative-box">
-    <strong>Briefing de Misión:</strong> Colegas docentes, han sido reclutados para el Laboratorio de Innovación Matemática (LIM-EC). El sistema actual presenta brechas críticas; su objetivo es reprogramar la enseñanza mediante neurociencias, tecnología y andragogía. El éxito se mide en Puntos de Experiencia (XP).
-</div>
-
-<h2>1. Rangos de Maestría (Sistema de XP)</h2>
-
-<table>
-<thead>
-<tr>
-<th>Rango de Logro</th>
+<table style="width:100%; border-collapse:collapse; text-align:center;">
+<tr style="background-color:#00e5ff; color:black;">
+<th>Rango</th>
 <th>XP Requerida</th>
-<th>Calificación Final</th>
+<th>Calificación</th>
 </tr>
-</thead>
-<tbody>
 <tr>
 <td>🥇 Maestro Innovador Senior</td>
-<td>900 - 1000 XP</td>
+<td>900 – 1000 XP</td>
 <td>10 / 10</td>
 </tr>
 <tr>
 <td>🥈 Especialista en Innovación</td>
-<td>800 - 899 XP</td>
+<td>800 – 899 XP</td>
 <td>9 / 10</td>
 </tr>
 <tr>
 <td>🥉 Investigador en Formación</td>
-<td>700 - 799 XP</td>
+<td>700 – 799 XP</td>
 <td>8 / 10</td>
 </tr>
-</tbody>
 </table>
 
-<h2>2. Hoja de Ruta (Misiones de Nivel)</h2>
+<hr style="border:1px solid #00e5ff; margin:30px 0;">
 
-<div class="unit-grid">
+<h2>🃏 Cartas de Poder (Power-Ups)</h2>
+<ul>
+<li>🃏 <strong>Teorema de la Prórroga</strong> – 50 XP</li>
+<li>👁️ <strong>Consulta al Oráculo</strong> – 75 XP</li>
+<li>🛡️ <strong>Escudo DUA</strong> – 100 XP</li>
+</ul>
 
-<div class="mission-item">
-<h3>Unidad 1: Currículo y Legislación Ecuatoriana</h3>
-<p><strong>Encuentro 1:</strong> La Autopsia del Currículo.</p>
-<p><strong>Encuentro 2:</strong> Cacería de Innovación.</p>
-<div class="badge-tag">Insignia: Analista Legislativo</div>
-</div>
+<hr style="border:1px solid #00e5ff; margin:30px 0;">
 
-<div class="mission-item">
-<h3>Unidad 2: Competencias y Evaluación</h3>
-<p><strong>Encuentro 1:</strong> Desafío ABP Geométrico.</p>
-<p><strong>Encuentro 2:</strong> Clínica de Casos.</p>
-<div class="badge-tag">Insignia: Arquitecto Pedagógico</div>
-</div>
+<h2>🔥 Evaluación Final: PROYECTO FINAL</h2>
+<p>Puntuación máxima: <strong>400 XP</strong></p>
+<ul>
+<li>Diagnóstico Curricular – 80 XP</li>
+<li>Bases Científicas – 80 XP</li>
+<li>Innovación Técnica – 100 XP</li>
+<li>Andragogía – 60 XP</li>
+<li>Rigor APA 7 – 80 XP</li>
+</ul>
 
-<div class="mission-item">
-<h3>Unidad 3: Neurociencias en la Matemática</h3>
-<p><strong>Encuentro 1:</strong> Duelo de Titanes.</p>
-<p><strong>Encuentro 2:</strong> Neuro-Hackathon.</p>
-<div class="badge-tag">Insignia: Neuro-Hacker</div>
-</div>
+<hr style="border:1px solid #00e5ff; margin:30px 0;">
 
-<div class="mission-item">
-<h3>Unidad 4: Andragogía y Software PhET</h3>
-<p><strong>Encuentro 1:</strong> Chrono-Math Challenge.</p>
-<p><strong>Encuentro 2:</strong> Defensa del Legacy Paper.</p>
-<div class="badge-tag">Insignia: Líder de Innovación</div>
-</div>
+<h2 style="text-align:center; color:#00ffcc;">🚀 ESTÁS LISTO PARA REPROGRAMAR EL FUTURO DE LA MATEMÁTICA</h2>
 
 </div>
+   
 
-<h2>3. Cartas de Poder (Power-Ups)</h2>
 
-<div class="power-up-card">
-🃏 <strong>Teorema de la Prórroga (50 XP):</strong> 48 horas adicionales.
-</div>
 
-<div class="power-up-card">
-👁️ <strong>Consulta al Oráculo (75 XP):</strong> Mentoría privada 1-a-1.
-</div>
-
-<div class="power-up-card">
-🛡️ <strong>Escudo DUA (100 XP):</strong> Reentrega para máximo puntaje.
-</div>
-
-<h2>4. Evaluación Final: Legacy Paper</h2>
-
-<p style="text-align:center;">Puntuación máxima: <span class="xp-text">400 XP</span></p>
-
-<table>
-<thead>
-<tr>
-<th>Criterio Académico</th>
-<th>Indicador de Éxito</th>
-<th>XP</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Diagnóstico</td>
-<td>Análisis crítico del currículo nacional</td>
-<td>80 XP</td>
-</tr>
-<tr>
-<td>Bases Científicas</td>
-<td>Integración neurocientífica</td>
-<td>80 XP</td>
-</tr>
-<tr>
-<td>Innovación Técnica</td>
-<td>Uso avanzado de simulaciones</td>
-<td>100 XP</td>
-</tr>
-<tr>
-<td>Andragogía</td>
-<td>Adaptación a estudiante adulto</td>
-<td>60 XP</td>
-</tr>
-<tr>
-<td>Rigor Editorial</td>
-<td>Normas APA 7 y fuentes indexadas</td>
-<td>80 XP</td>
-</tr>
-</tbody>
-</table>
-
-<div class="footer">
-<p>Maestría Educación con Mención en la Enseñanza de las Matemáticas - Módulo de en Innovación Pedagógica </p>
-<p>PhD. John Fernando Granados Romero</p>
-<p>Ecuador, 2026 | Laboratorio de Innovación LIM-EC</p>
-</div>
-
-</body>
-</html>
